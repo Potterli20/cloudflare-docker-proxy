@@ -38,3 +38,31 @@
    };
    ```
 
+3. deploy by wrangler
+  ```bash
+  # replace libcuda.so to your domain in wrangler.toml
+  sed -i 's/libcuda.so/${CUSTOM_DOMAIN}/g' wrangler.toml
+  # install install dependencies
+  yarn
+  # deploy
+  yarn wrangler deploy --env production --minify src/index.js
+  ```
+
+## Usage
+
+```bash
+# busybox:stable ==> docker.libcuda.so/busybox:stable
+docker pull docker.libcuda.so/busybox:stable
+# or
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-EOF
+{
+    "registry-mirrors": [
+        "https://docker.libcuda.so",
+    ]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+docker pull busybox:stable
+```
