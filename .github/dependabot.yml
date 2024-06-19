@@ -15,7 +15,3 @@ updates:
     schedule:
       interval: "daily"
       
-  - package-ecosystem: "yarn" # GitHub Actions
-    directory: "/"
-    schedule:
-      interval: "daily"
