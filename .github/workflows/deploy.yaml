@@ -14,10 +14,6 @@ jobs:
     name: Build & Deploy
     steps:
       - uses: actions/checkout@main
-      - name: Setup hostname
-        run: |
-          sed -i 's/trli.cloudns.biz/${{ secrets.CF_HOST }}/g' src/index.js
-          sed -i 's/trli.cloudns.biz/${{ secrets.CF_HOST }}/g' wrangler.toml
       - name: Publish
         uses: cloudflare/wrangler-action@main
         with:
