@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build & Deploy
     steps:
-      - uses: actions/checkout@mian
+      - uses: actions/checkout@main
       - name: Publish
         uses: cloudflare/wrangler-action@main
         with:
