@@ -16,7 +16,7 @@ routes = [
   { pattern = "docker.trli.cloudns.biz", custom_domain = true },
   { pattern = "quey.trli.cloudns.biz", custom_domain = true },
   { pattern = "gcr.trli.cloudns.biz", custom_domain = true },
-  { pattern = "k8s-gcr.ltrli.cloudns.biz", custom_domain = true },
+  { pattern = "k8s-gcr.trli.cloudns.biz", custom_domain = true },
   { pattern = "k8s.trli.cloudns.biz", custom_domain = true },
   { pattern = "ghcr.trli.cloudns.biz", custom_domain = true },
   { pattern = "cloudsmith.trli.cloudns.biz", custom_domain = true },
