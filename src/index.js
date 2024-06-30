@@ -14,6 +14,7 @@ const routes = {
   "k8s.trli.cloudns.ch": "https://registry.k8s.io",
   "ghcr.trli.cloudns.ch": "https://ghcr.io",
   "cloudsmith.trli.cloudns.ch": "https://docker.cloudsmith.io",
+  "ecr.trli.cloudns.ch": "https://public.ecr.aws",
 
   // staging
   "docker-staging.trli.cloudns.ch": dockerHub,
